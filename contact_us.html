@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact_Me</title>
+</head>
+<body>
+    <article class="contact">
+        <article class="top-container_contact">
+         <h2 class="contact_heading">Contact Me</h2>
+        </article>
+        <form id="contactForm"  class="contact-form" action="#" method="post">
+  
+  <label data-testid="test-contact-name"  for="name">Full Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+  <label data-testid="test-contact-email" for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+  <label data-testid="test-contact-subject" for="subject">Subject:</label>
+  <input type="text" id="subject" name="subject" placeholder="Subject" required>
+  
+  <label data-testid="test-contact-message" for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+  
+  <button data-testid="test-contact-submit" type="submit" class="btn" >Send Message</button>
+</form>
+<div id="toast-success" data-testid="test-contact-success" class="toast success"></div>
+<div id="toast-error" data-testid="test-contact-error" class="toast error"></div>
+
+    </article>
+  <script src="index.js"></script>
+</body>
+</html>
